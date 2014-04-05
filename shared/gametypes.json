@@ -1,0 +1,11 @@
+{
+    "Messages":{
+        "ERROR": 0,
+        "CONNECT": 1,
+        "WELCOME": 2,
+        "ADDPLAYER": 3,
+        "ADDEDPLAYER": 4,
+        "ADDCLUE": 5,
+        "ADDEDCLUE": 6
+    }
+}

@@ -1,0 +1,105 @@
+{   "id" : "quest1",
+    "title": "An example quest, you can do at home…",
+    "physicalClues":[
+        {   "clueId":"R1",
+            "color":"#ff0000",
+            "location":"On the wall, right of the closet"
+        },
+        {   "clueId":"R2",
+            "color":"#00ff00",
+            "location":"In the closet"
+        },
+        {   "clueId":"R3",
+            "color":"#0000ff",
+            "location":"Under the footstool"
+        },
+        {   "clueId":"R4",
+            "color":"#000000",
+            "location":"Under the foot of the footstool"
+        },
+        {
+            "clueId":"R5",
+            "color":"#1101bb",
+            "location":"In the toilets on the door"
+        }
+    ],
+    "defaultFeedback":"This code won't get you anywhere! (for now…)",
+    "victoryFeedback":"Thou hast completed thy quest!",
+    "riddles":{
+        "/":{
+             "text":"Find the red QR code…",
+             "help":"A QR code is a logo which you can scan with the appropriate application, to be analyzed and in this case to send you to a url.",
+             "clues":{
+                 "R1":{
+                     "feedback":"Well done, now look to your left",
+                     "nextQuestion":"Q2"
+                 },
+                 "R2":{
+
+                     "feedback":"mmm, are you daltonian",
+                     "nextQuestion":false
+                 },
+                 "R3":{
+                     "feedback":"It's not red, but you did well, you found a short cut, don't you want to see the last question ?",
+                     "nextQuestion":"Q3"
+                 }
+             }
+        },
+        "Q2":{
+            "text":"The green QR code is hidden in the closet",
+            "help":"You know what is a QR code, what don't you understand, <a href='https://en.wikipedia.org/wiki/Green'>green</a> or <a href='https://en.wikipedia.org/wiki/Closet'>closet</a>?",
+            "defaultFeedback":"Is this inside the closet?",
+            "clues":{
+                "R1":{
+                    "feedback":"Are you going to scan this over and over again?",
+                    "nextQuestion":false
+                },
+                "R2":{
+                    "feedback":"Just 2 more",
+                    "nextQuestion":"Q3"
+                }
+                
+            }
+        },
+        "Q3":{
+            "text":"The last blue one is under the footstool",
+            "help":"&quot;Watch out&quot; as Leslie Nielsen would deadly say",
+            "clues":{
+                "R1":{
+                    "feedback":"Are you going to scan this over and over again?",
+                    "nextQuestion":false
+                },
+                "R3":{
+                    "feedback":"Last but not least",
+                    "nextQuestion":"Q4"
+                }
+            }
+        },
+        "Q4":{
+            "text":"First is fast, but closer might be faster",
+            "help":"mmm, then you're not fast… Be monomaniac or explore the neighboorhood",
+            "clues":{
+                "R1":{
+                    "feedback":"Scanning over and over again is not that bad… you did it !",
+                    "nextQuestion":true
+                },
+                "R4":{
+                    "feedback":"That's it, under the foot of the footstool, that was close, wasn't it?",
+                    "nextQuestion":true
+                }
+            }
+        },
+
+        "Q5":{
+            "trigger":["Q2","Q4"],
+            "text":"You did the long quest, so you might just do another one:<br />“I am a closet, but I don't hold clothes, or shitty ones”",
+            "help":"Take a deep breath and push",
+            "clues":{
+                "R5":{
+                    "feedback":"Well, there was another blue one in fact, but didn't you enjoy the journey.",
+                    "nextQuestion":true
+                }
+            }
+        }
+    }
+}

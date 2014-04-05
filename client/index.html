@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge;chrome=1">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no">
+        <link rel="icon" type="image/png" href="img/common/favicon.png">
+        <meta property="og:title" content="QuestRCode">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Janus, appli de chasse au trésor">
+        <meta property="og:description" content="Un système pour faire une chasse au trésor à partir de QR codes">
+        <link rel="stylesheet" href="style/QRC.css" type="text/css">
+        <script src="js/lib/modernizr.js" type="text/javascript"></script>
+        <title>Chasse au trésor</title>
+	</head>
+    <body>
+        <div id="overlay"></div>
+	    <noscript>
+	       <div class="alert">
+	           Vous devez permettre l'exécution de javascript pour pouvoir utiliser cette application
+	       </div>
+	    </noscript>
+        <menu>
+            <div id="playerName"></div>
+            <!--div id="inviteButton">a</div>
+            <div id="teammate">b</div-->
+            <div id="help"></div>
+            <!--div id="int">d</div-->
+            <div id="score"></div>
+        </menu>
+
+	    <main>
+            <h1>test</h1>
+            <!-- by default it's empty…-->
+            <div id="main-content" class="middle">
+                <p id="question"></p>
+            </div>
+		</main>
+        <aside id="tries">
+            <div class="middle">
+                <p></p>
+            </div>
+        </aside>
+        <script data-main="js/home" src="js/lib/require-jquery.js"></script>
+	</body>
+</html>

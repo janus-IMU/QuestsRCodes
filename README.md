@@ -12,7 +12,7 @@ Requirements
 ------------
 To run, QuestsRCodes requires :
 * a server with php
-* a database system here TODO
+* a mySQL db
 
 Coding conventions and tags
 ------------------------
